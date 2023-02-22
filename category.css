@@ -1,0 +1,63 @@
+.filterflex{
+    display: flex;
+    border: 1px solid darksalmon;
+    justify-content: space-between;
+}
+
+
+
+
+
+.filter{
+    border: 1px solid red;
+    /* display: flex; */
+    width: 228px;
+}
+.sortby{
+    width: 130px;
+    border: 1px solid black;
+}
+.price{
+    width: 130px;
+    border: 1px solid rgb(9, 255, 83);
+}
+.discount{
+    width: 130px;
+    border: 1px solid rgb(0, 110, 255);
+}
+.colors{
+    width: 130px;
+    border: 1px solid goldenrod;
+}
+.size{
+    width: 130px;
+    border: 1px solid darkcyan;
+}
+.brand{
+    width: 130px;
+    border: 1px solid darkred;
+}
+.type{
+    width: 130px;
+    border: 1px solid darkmagenta;
+}
+.category{
+    width: 130px;
+    border: 1px solid royalblue;
+}
+.occasion{
+    width: 130px;
+    border: 1px solid rosybrown;
+}
+.prints{
+    width: 130px;
+    border: 1px solid dodgerblue;
+}
+.offers{
+    width: 130px;
+    border: 1px solid darkslategrey;
+}
+.offers{
+    width: 130px;
+    border: 1px solid darkslategrey;
+}
