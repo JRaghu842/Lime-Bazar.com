@@ -1,0 +1,229 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    width: 90%;
+    margin: auto;
+    background-color: rgb(240, 245, 247);
+}
+
+#wrapper {
+    display: flex;
+    gap: 5%;
+}
+
+#all_the_form {
+    flex: 1;
+}
+
+#container {
+    flex: 2;
+    /* background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); */
+}
+
+form{
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+    color: green;
+    margin-top: 30px;
+}
+
+input{
+    display: block;
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 30px;
+    color: #333;
+   
+    
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #ccc;
+}
+
+#add_products_btn{
+    display: block;
+    margin: 30px auto 0;
+    padding: 10px 50px;
+    background-color: rgb(103, 246, 182);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+#update_products_btn{
+    display: block;
+    margin: 30px auto 0;
+    padding: 10px 50px;
+    background-color: rgb(103, 246, 182);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+#update_price_btn{
+    display: block;
+    margin: 30px auto 0;
+    padding: 10px 50px;
+    background-color: rgb(103, 246, 182);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+#update_brand_btn{
+    display: block;
+    margin: 30px auto 0;
+    padding: 10px 50px;
+    background-color: rgb(103, 246, 182);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+#sort_by_price_btn_low{
+    display: block;
+    margin: 30px auto 0;
+    padding: 10px 50px;
+    background-color: rgb(103, 246, 182);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+#sort_by_price_btn_high{
+    display: block;
+    margin: 30px auto 0;
+    padding: 10px 50px;
+    background-color: rgb(103, 246, 182);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+#delete_products_btn{
+    display: block;
+    margin: 30px auto 0;
+    padding: 10px 50px;
+    background-color: rgb(103, 246, 182);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+#filter_by_price_btn_less_250{
+    display: block;
+    margin: 30px auto 0;
+    padding: 10px 50px;
+    background-color: rgb(103, 246, 182);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+#filter_by_price_btn_less_500{
+    display: block;
+    margin: 30px auto 0;
+    padding: 10px 50px;
+    background-color: rgb(103, 246, 182);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+#filter_by_price_btn_less_750{
+    display: block;
+    margin: 30px auto 0;
+    padding: 10px 50px;
+    background-color: rgb(103, 246, 182);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+#filter_by_price_btn_less_1000{
+    display: block;
+    margin: 30px auto 0;
+    padding: 10px 50px;
+    background-color: rgb(103, 246, 182);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+#filter_by_price_btn_more_1000{
+    display: block;
+    margin: 30px auto 0;
+    padding: 10px 50px;
+    background-color: rgb(103, 246, 182);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+
