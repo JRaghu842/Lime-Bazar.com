@@ -1,0 +1,70 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(224, 223, 223);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#parent{
+    width: 70%;
+    margin: auto;
+}
+
+#topContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 35px;
+    margin-left: 40px;
+}
+
+#Vline{
+    border-left: 2px solid gray;
+    height: 50px;
+}
+
+#myFeed{
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: space-around;
+    align-items: center;
+}
+
+#myFeed img{
+    width: 80%;
+}
+
+#pfeed{
+    margin-left: -20%;
+}
+
+#topContainer img{
+    width: 65%;
+    
+}
+
+#hrline{
+    border: 2px solid rgb(2, 146, 203);
+}
+
+#topsubSection{
+    display: flex;
+    background-color: rgb(217, 233, 239);
+    margin-top: -8px;
+}
+
+#topsubSection img{ 
+    width: 5%;
+    margin: 10px;
+}
+
+#cssEffect{
+    display: flex;
+}
+
+#cssEffect img{
+    width: 50%;
+}
