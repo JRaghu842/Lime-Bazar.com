@@ -5,9 +5,15 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
+
 #parent{
     width: 70%;
     margin: auto;
+}
+
+#secWomen{
+    color: rgb(130, 130, 130);
 }
 
 #topContainer{
@@ -54,6 +60,7 @@ body{
     display: flex;
     background-color: rgb(217, 233, 239);
     margin-top: -8px;
+    align-items: center;
 }
 
 #topsubSection img{ 
@@ -61,10 +68,154 @@ body{
     margin: 10px;
 }
 
-#cssEffect{
+
+.slider{
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider figure div{
+    float:left;
+    width: 20%;
+}
+
+.slider figure img{
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.img-container{
     display: flex;
 }
 
-#cssEffect img{
-    width: 50%;
+.slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    animation: animate 30s infinite;
+}
+
+@keyframes animate {
+    0%{left:0%;}
+    10%{left:0%;}
+    12%{left:-100%;}
+    22%{left:-100%;}
+    24%{left:-200%;}
+    34%{left:-200%;}
+    36%{left:-300%;}
+    46%{left:-300%;}
+    48%{left:-400%;}
+    58%{left:-400%;}
+    60%{left:-300%;}
+    70%{left:-300%;}
+    72%{left:-200%;}
+    82%{left:-200%;}
+    84%{left:-100%;}
+    94%{left:-100%;}
+    96%{left:0%;}
+} 
+ 
+
+
+.containers{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.containers div{
+    text-align: center;
+    padding: 0 2px 0 2px
+}
+
+
+.containers img{
+    width: 100%;
+    padding-top: 10px;
+}
+  
+.vieweditem{
+    font-weight: 600;
+    margin-bottom: 0px;
+    font-size: 22px;
+}
+
+.cardbottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    background-color: white;
+    
+}
+
+.cardbottom p{
+    margin-top: -5px;
+    text-align: left;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-top: 10px;
+
+}
+
+
+.cardbottom div{
+    padding: 10px;
+}
+
+.cardbottom i{
+    padding-right: 10px;
+    color: rgb(216, 19, 88);
+    font-size: 23px;
+}
+
+
+#off{
+    font-size: 15px;
+    color: rgb(112, 183, 6);
+
+}
+
+.cardbottom p:nth-child(2){
+    margin-top: -15px;
+    font-size: 15px;
+    color: rgb(86, 86, 86);
+
+    padding-top: 0px;
+    margin-bottom: 3px;
+}
+
+.icon{
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.cardbottom i:nth-child(2){
+    padding-right: 5px;
+    color: rgb(112, 183, 6);
+}
+
+.about_item{
+
+    margin-bottom: 0px;
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+.likes{
+    color:  rgb(86, 86, 86);
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#container8{
+    margin-bottom: 50px;
 }
