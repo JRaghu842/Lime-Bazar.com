@@ -1,13 +1,11 @@
+#main{
+    display: flex;
+}
 .filterflex{
     display: flex;
     border: 1px solid darksalmon;
     justify-content: space-between;
 }
-
-
-
-
-
 .filter{
     border: 1px solid red;
     /* display: flex; */
@@ -60,4 +58,25 @@
 .offers{
     width: 130px;
     border: 1px solid darkslategrey;
+}
+#container{
+    /* display: flex; */
+    /* margin: auto; */
+    text-align: center;
+}
+#card{
+    display: grid;
+    margin: auto;
+    grid-template-columns: 32% 32% 32%;
+    gap: 6px;
+    width: 50%;
+    border: 1px solid red;
+}
+#card>div{
+    margin: auto;
+    border: 1px solid greenyellow;
+}
+#card>div>img{
+    /* display: block; */
+    width: 100%
 }
