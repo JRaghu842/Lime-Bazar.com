@@ -227,3 +227,111 @@ label {
 }
 
 
+#box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#box > div {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+#box i {
+  color: green;
+  font-size: 2em;
+}
+
+
+ #all_products {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+     
+ 
+
+.card {
+     width: 80%;
+     flex-basis: calc(33.33% - 20px); 
+     margin: 10px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #ccc;
+}  
+
+ .card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+} 
+
+ .card h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.card p {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.card .price {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #ffa800;
+}
+
+ 
+
+ .space{
+    justify-content: space-between;
+}
+
+
+.card {
+    transition: all 0.5s ease;
+    transform: scale(1);
+    transform-style: preserve-3d;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px #ccc;
+}
+ 
+#all_products{
+    margin-top: 20px;
+}
+.card-brand{
+    margin-top: 10px;
+}
+.card-category{
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
