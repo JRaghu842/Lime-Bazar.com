@@ -1,0 +1,82 @@
+.topsection{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 50px;
+}
+.logo{
+    width: 90px;
+    height: 90px;
+}
+.logo>img{
+    width: 100%;
+}
+#bottomsection{
+display: flex;
+justify-content: space-around;
+
+}
+.itemsdetails{
+width: 450px;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+padding-top: 50px;
+padding-bottom: 50px;
+}
+.itemsdetails>div{
+width: 350px;
+margin: auto;
+text-align: center;
+
+}
+.itemsdetails>img{
+width: 10px;
+}
+button {
+display: inline-block;
+background-color: #EC407A;
+border: none;
+color: white;
+text-align: center;
+font-size: 16px;
+padding: 10px 20px;
+cursor: pointer;
+border-radius: 4px;
+}
+
+.button:hover {
+background-color: #3e8e41;
+}
+
+.img{
+width: 35px;
+height: 35px;
+}
+.img>img{
+width: 100%;
+}
+.coupen{
+display: flex;
+}
+.price,.charge,.tax,.amount{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: 20px
+
+}
+.card{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: 5px;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+width: 500px;
+}
+.image{
+width: 150px;
+
+}
+.image>img{
+width: 100%;
+height: 100%;
+}
+.amount p{
+font-size: 19px ;
+color: #EC407A;
+}
