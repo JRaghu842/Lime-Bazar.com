@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="cart.css">
+<body>
+    <div class="topsection">
+        <div class="logo">
+            <img src="logo_page-0001.jpg" alt="logo">
+        </div>
+    </div>
+    <div id="bottomsection">
+        <div class="items">
+            <div class="card">
+                <div class="image">
+                    <img src="https://img3.junaroad.com/uiproducts/19126384/pri_175_p-1673586933.jpg" alt="image">
+                </div>
+                <div class="details">
+                    <h3>titel</h3>
+                    <p>brand</p>
+                    <h3 id="cardPrice">price</h3>
+                    <h3>size</h3>
+                    <h3>Quntity:
+                        <select id="quantity">
+                            <option value="option1"> 1</option>
+                            <option value="option2"> 2</option>
+                            <option value="option3"> 3</option>
+                          </select> 
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="itemsdetails">
+            <div>
+                <div class="coupen">
+                    <div class="img">
+                    <img src="https://img0.junaroad.com/images/icons/coupon_icon_v2.png" alt="img">
+                    </div>
+                    <input type="text" placeholder="Coupen Code">
+                    <button>Add</button>
+                </div>
+                <div class="summery">
+                    <h2>SUMMARY</h2>
+                    <div class="price">
+                        <p>Total Price</p>
+                        <p id="cost">0</p>
+                    </div>
+                    <div class="charge">
+                        <p>Shipping Charges</p>
+                        <p>Free</p>
+                    </div>
+                    <div class="tax">
+                        <p>Applicable Tax And Charges</p>
+                        <p id="Tax">0</p>
+                    </div>
+                    <div class="amount">
+                        <p>Amount Payable</p>
+                        <p id="bill">0</p>
+                    </div>
+                </div>
+                <button>BUY NOW</button>
+            </div>
+            
+        </div>
+    </div>
+    
+
+</body>
+<script>
+    let actuvalPrice=document.getElementById("cardPrice")
+    let price=document.getElementById("cost")
+    let tax=document.getElementById("Tax")
+    let amount=document.getElementById("bill")
+    let quntity=document.getElementById("quantity")
+   let itmes= localStorage.getItem(JSON.parse())
+   let cost=0
+   price.innerText=cost
+   tax.innerText=cost*0.15
+   amount.innerText=cost+(cost*0.15)
+   quntity.addEventListener("click",()=>{
+    let quntityPrice=actuvalPrice.innerText*quntity.value
+    
+    price.innerText=cost
+   tax.innerText=cost*0.15
+   amount.innerText=cost+(cost*0.15)
+   })
+   function render(data){
+    let cards=data.map((ele)=>{
+        let card=Createcard()
+    })
+   }
+   
+    function Createcard(image,titel,brand,price,size){
+        cost+=price
+        let card=`
+        <div class="card">
+                <div class="image">
+                    <img src=${image} alt="image">
+                </div>
+                <div class="details">
+                    <h3>${titel}</h3>
+                    <p>${brand}</p>
+                    <h3>${price}</h3>
+                    <h3>${size}</h3>
+                    <h3>Quntity:
+                        <select>
+                            <option value="option1"> 1</option>
+                            <option value="option2"> 2</option>
+                            <option value="option3"> 3</option>
+                          </select> 
+                    </h3>
+                </div>
+            </div>
+        `
+        return card
+    }
+    
+</script>
+</html>
