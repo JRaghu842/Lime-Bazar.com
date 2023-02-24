@@ -1,63 +1,104 @@
+body{
+    background: #EEE;
+}
 #main{
     display: flex;
 }
-.filterflex{
-    display: flex;
-    border: 1px solid darksalmon;
-    justify-content: space-between;
+
+.dropdown-content{
+    display: none;
+}
+button{
+    background-color: #4CAF50; 
+    border: none; 
+    color: white;
+    height: 20px;
+    /* width: 20px;  */
+    margin-bottom: 8px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: block;
+    font-size: 15px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+button:hover{
+    background-color: darkgreen;
+}
+.total-items{
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    font-size: 0.813rem;
+    line-height: 16px;
+}
+.total-items>p:first-child{
+    font-weight: bold;
+    font-size: 15px;
 }
 .filter{
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    background-color: white;
     /* display: flex; */
-    width: 228px;
+    /* text-align: center; */
+    font-family: "Roboto",Roboto,"Helvetica",Helvetica,"Arial",Arial,sans-serif;
+    width: 30%;
+}
+.dropbtn{
+    /* font-size: 5px; */
+    margin-right: 10px;
+    /* border: 1px solid red; */
+}
+#allfilter{
+    /* border: 2px solid rebeccapurple; */
+    /* display: contents; */
+    align-items: center;
+    width: 90%;
+    padding: 5px;
+
+}
+.dropdown-conten>input{
+    width: 200%;
+    color: #4CAF50;
+    border-color: blue;
+}
+#allfilter>div{
+    margin: 10px 5px 5px 5px; 
+    padding-top: 8px;
+}
+span{
+    color: #333;
 }
 .sortby{
-    width: 130px;
-    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .price{
-    width: 130px;
-    border: 1px solid rgb(9, 255, 83);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .discount{
-    width: 130px;
-    border: 1px solid rgb(0, 110, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .colors{
-    width: 130px;
-    border: 1px solid goldenrod;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .size{
-    width: 130px;
-    border: 1px solid darkcyan;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .brand{
-    width: 130px;
-    border: 1px solid darkred;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .type{
-    width: 130px;
-    border: 1px solid darkmagenta;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .category{
-    width: 130px;
-    border: 1px solid royalblue;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .occasion{
-    width: 130px;
-    border: 1px solid rosybrown;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .prints{
-    width: 130px;
-    border: 1px solid dodgerblue;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .offers{
-    width: 130px;
-    border: 1px solid darkslategrey;
-}
-.offers{
-    width: 130px;
-    border: 1px solid darkslategrey;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 #container{
     /* display: flex; */
@@ -69,12 +110,14 @@
     margin: auto;
     grid-template-columns: 32% 32% 32%;
     gap: 6px;
+    text-align: left;
     width: 50%;
     border: 1px solid red;
 }
 #card>div{
-    margin: auto;
-    border: 1px solid greenyellow;
+    margin-left: 8px;
+    background-color: white;
+    border: 1px solid black;
 }
 #card>div>img{
     /* display: block; */
