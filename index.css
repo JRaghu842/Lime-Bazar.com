@@ -191,7 +191,7 @@ body{
 }
 
 .icon{
-    width: 25%;
+    width: 28%;
     display: flex;
     justify-content: space-around;
 
@@ -219,3 +219,71 @@ body{
 #container8{
     margin-bottom: 50px;
 }
+
+.card{
+    width: 33%;
+}
+
+@media screen and (min-width:500px) and (max-width:970px){
+
+
+#topContainer{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.slider figure img{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+#container1 div:nth-child(3){
+    display: none;
+}
+
+#container2 div:nth-child(3){
+    display: none;
+}
+
+#container3 div:nth-child(3){
+    display: none;
+}
+
+#container4 div:nth-child(3){
+    display: none;
+}
+
+#container5 div:nth-child(3){
+    display: none;
+}
+
+#container6 div:nth-child(3){
+    display: none;
+}
+
+#container7 div:nth-child(3){
+    display: none;
+}
+
+#container8 div:nth-child(3){
+    display: none;
+}
+.card{
+    width: 48%;
+    background-color: white;
+    padding: 0px;
+    margin-top: 30px;
+}
+
+.card img{
+    margin-top: -8px;
+
+
+}
+
+
+}
+
