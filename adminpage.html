@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Admin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+     <link rel="stylesheet" href="adminpage.css">
+</head>
+<body>
+    <h1>Welcome Siddharth kumar</h1>
+    <div id="wrapper">
+        <div id="all_the_form">
+            
+                 <div id="register-form"> 
+                <label for="name">Add Products</label>
+                 <input type="text" placeholder="title" required id="add_products_title">
+                 <input type="text" placeholder="price" required id="add_products_price">
+                 <input type="text" placeholder="category" required id="add_products_category">
+                 <input type="text" placeholder="image" required id="add_products_image">
+                 <input type="text" placeholder="description" required id="add_products_description">
+                 <input type="text" placeholder="brand" required id="add_products_brand">
+                
+                 <button type="submit" id="add_products_btn">Add Products</button>
+                 
+
+                  <label for="name">Update Products</label>
+                  <input type="text" placeholder="title" required id="update_products_title">
+                  <input type="text" placeholder="price" required id="update_products_price">
+                  <input type="text" placeholder="category" required id="update_products_category">
+                  <input type="text" placeholder="image" required id="update_products_image">
+                  <input type="text" placeholder="description" required id="update_products_description">
+                  <input type="text" placeholder="brand" required id="update_products_brand">
+                  <input type="text" placeholder="id" required id="update_products_id">
+                  <button type="submit" id="update_products_btn">Update Products</button>
+
+                 <label for="name">Update Price</label>
+                 <input type="text" placeholder="id" required id="update_price_id">
+                <input type="text" placeholder="price" required id="update_price_price">
+                <button type="submit" id="update_price_btn">Update Price</button>
+
+                <label for="name">Update brand</label>
+                <input type="text" placeholder="id" required id="update_brand_id">
+               <input type="text" placeholder="brand" required id="update_brand_brand">
+               <button type="submit" id="update_brand_btn">Update brand</button>
+
+               <label for="name">Delete products</label>
+               <input type="text" placeholder="id" required id="delete_products_id">
+               <button type="submit" id="delete_products_btn">Delete products</button>
+
+               <label for="name">Sort by Price</label>
+               <button type="submit" id="sort_by_price_btn_low">SORT LOW TO HIGH</button>
+               <button type="submit" id="sort_by_price_btn_high">SORT HIGH TO LOW</button>
+               
+             
+               <label for="name">Filter by Price</label>
+               <button type="submit" id="filter_by_price_btn_less_250">LESS THAN Rs250</button>
+               <button type="submit" id="filter_by_price_btn_less_500">LESS THAN Rs500 </button>
+               <button type="submit" id="filter_by_price_btn_less_750">LESS THAN Rs750 </button>
+               <button type="submit" id="filter_by_price_btn_less_1000">LESS THAN Rs1000 </button>
+               <button type="submit" id="filter_by_price_btn_more_1000">MORE THAN Rs1000 </button>
+
+            
+
+             </div> 
+        </div>
+        <div id="container">
+            <div id="box">
+                <div id="first box">
+                    Total items
+                    <h3 id="count1">0</h3><i class="fas fa-cart-plus"></i>
+                </div>
+                <div id="second box">
+                    Newly Add items
+                    <h3 id="count2" >0</h3>
+                    <i class="fas fa-cart-plus"></i>
+                </div>
+                <div id="third box">
+                    Total Updated items
+                    <h3 id="count3">0</h3>
+                    <i class="fas fa-cart-plus"></i>
+                </div>
+                <div id="fourth box">
+                    Deleted items
+                    <h3 id="count4">0</h3>
+                    <i class="fas fa-cart-plus"></i>
+                </div>
+            </div>
+            <div id="all_products"></div>
+        </div>
+    </div>
+</body>
+<script src="adminpage.js"></script>
+</html>
