@@ -5,302 +5,485 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/categoryPage/category.css">
+    <link rel="stylesheet" href="./category.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
     <title>Mens Category</title>
 </head>
 
 <body>
-    <div id="main">
-        <div class="filter">
-            <div class="total-items">
-                <p>Mens Fashion - T Shirts, Suits, Blazers & Jeans</p>
-                <p id="numofpro">83 Products</p>
+
+    <body>
+        <nav>
+            <div id="logo">
+              <img src="../logo.jpeg" alt="">
             </div>
-            <p>FILTER & SORT</p>
-            <div id="allfilter">
-                <div class="sortby">
-                    <span>Sort By</span>
-                    <button onclick="toggleDropdown(this)" class="dropbtn">+</button>
-                    <div id="dropdown1" class="dropdown-content">
-                        <input type="checkbox" name="high" id="asc">
-                        <label for="sort">High Price</label><br>
-                        <input type="checkbox" name="low" id="desc">
-                        <label for="sort">Low Price</label><br>
-                        <input type="checkbox" name="trending" id="sort1">
-                        <label for="sort">Trending</label><br>
-                        <input type="checkbox" name="new" id="sort2">
-                        <label for="sort">New</label><br>
-                        <input type="checkbox" name="discount" id="sort3">
-                        <label for="sort">Discount</label><br>
-                    </div>
-                </div>
-                <div class="price">
-                    <span>Price</span>
-                    <button onclick="toggleDropdown(this)" class="dropbtn">+</button>
-                    <div id="dropdown2" class="dropdown-content">
-                        <input type="checkbox" name="trending" id="price1">
-                        <label for="sort">300 To 499</label><br>
-                        <input type="checkbox" name="new" id="price2">
-                        <label for="sort">699 To 999</label><br>
-                        <input type="checkbox" name="discount" id="price3">
-                        <label for="sort">1000 To 1499</label><br>
-                        <input type="checkbox" name="high" id="price4">
-                        <label for="sort">1500 To 2499</label><br>
-                        <input type="checkbox" name="low" id="price5">
-                        <label for="sort">2500 To 14999</label><br>
-                    </div>
-                </div>
-                <div class="colors">
-                    <span>Colors</span>
-                    <button onclick="toggleDropdown(this)" class="dropbtn">+</button>
-                    <div id="dropdown2" class="dropdown-content">
-                        <input type="checkbox" name="trending" id="blue">
-                        <label for="sort">Blue</label><br>
-                        <input type="checkbox" name="discount" id="black">
-                        <label for="sort"> black</label><br>
-                        <input type="checkbox" name="high" id="gray">
-                        <label for="sort">Gray</label><br>
-                        <input type="checkbox" name="low" id="white">
-                        <label for="sort">white</label><br>
-                        <input type="checkbox" name="trending" id="red">
-                        <label for="sort">Red</label><br>
-                        <input type="checkbox" name="new" id="color7">
-                        <label for="sort">green</label><br>
-                        <input type="checkbox" name="discount" id="color8">
-                        <label for="sort">Dark blue</label><br>
-                        <input type="checkbox" name="high" id="yellow">
-                        <label for="sort">yellow</label><br>
-                        <input type="checkbox" name="low" id="color10">
-                        <label for="sort">beige</label><br>
-                        <input type="checkbox" name="trending" id="color11">
-                        <label for="sort">brown</label><br>
-                        <input type="checkbox" name="new" id="color12">
-                        <label for="sort">pink</label><br>
-                        <input type="checkbox" name="discount" id="color13">
-                        <label for="sort">Maroon</label><br>
-                        <input type="checkbox" name="high" id="color14">
-                        <label for="sort">orange</label><br>
-                        <input type="checkbox" name="low" id="color15">
-                        <label for="sort">Olive</label><br>
-                        <input type="checkbox" name="low" id="color16">
-                        <label for="sort">gold</label><br>
-                        <input type="checkbox" name="low" id="color17">
-                        <label for="sort">purple</label><br>
-                    </div>
-                </div>
+            <div id="women">
+              <ul >
+                <li>
+                  <a href="#">Women</a>
+                <ul>
+                  <div>
+                  <h3>Etnic Wear</h3>
+                  <li>Kurta Kurthis</li>
+                  <li>Sarees</li>
+                  <li>Ethnic Sets</li>
+                  <li>Suits & Dress Material</li>
+                  <li>Lehengas</li>
+                  <li>Blouses</li>
+                  </div>
+                  <div>
+                    <h3>Western Wear</h3>
+                    <li>Tops</li>
+                    <li>Dresses</li>
+                    <li>Trees</li>
+                    <li>Shirts</li>
+                    <li>Tunics</li>
+    
+                  </div>
+                  <div>
+                    <h3>Sports & Activeware</h3>
+                    <li>Swim Wears</li>
+                    <li>Topwear</li>
+                    <li>Bottomwear</li>
+                    <li>shoes</li>
+    
+                  </div>
+                </ul>
+                </li>    
                 
-                <div class="brand">
-                    <span>Brand</span>
-                    <button onclick="toggleDropdown(this)" class="dropbtn">+</button>
-                    <div id="dropdown2" class="dropdown-content">
-                        <input type="checkbox" name="trending" id="Manyavar">
-                        <label for="sort">Manyavar</label><br>
-                        <input type="checkbox" name="new" id="Showoff">
-                        <label for="sort">Showoff</label><br>
-                        <input type="checkbox" name="discount" id="HRX">
-                        <label for="sort">HRX</label><br>
-                        <input type="checkbox" name="high" id="Mufti">
-                        <label for="sort">Mufti</label><br>
-                        <input type="checkbox" name="low" id="Soch">
-                        <label for="sort">Soch</label><br>
-                        <input type="checkbox" name="trending" id="Shoeland">
-                        <label for="sort">Shoeland</label><br>
-                        <input type="checkbox" name="new" id="brand7">
-                        <label for="sort">Urban dog</label><br>
-                        <!-- down part not for use -->
-                        <input type="checkbox" name="discount" id="brand8">
-                        <label for="sort">AD Arvind</label><br>
-                        <input type="checkbox" name="high" id="brand9">
-                        <label for="sort">AD Fashion</label><br>
-                        <input type="checkbox" name="low" id="brand10">
-                        <label for="sort">Adorate</label><br>
+              </ul>
+              
+            </div>
+            <div id="men">
+              <ul >
+                <li>
+                  <a href="#">Men</a>
+                <ul>
+                  <div>
+                  <h3>Top Wear</h3>
+                  <li>T-Shirts</li>
+                  <li>Casuval Shirts</li>
+                  <li>Formal Shirts</li>
+                  <li>Suits & Blazers</li>
+                  <li>Jackets</li>
+                  <li>Sweaters</li>
+                  </div>
+                  <div>
+                    <h3>Ethinic Wear</h3>
+                    <li>Kurtas</li>
+                    <li>Ethnic Wear Sets</li>
+                    <li>Neharu Jackets</li>
+                    <li>Ethick Bottom Wear</li>
+                    <li>T-Shirts</li>
+                  </div>
+                  <div>
+                    <h3>Foot Wear</h3>
+                    <li>Casuval Shoes</li>
+                    <li>Formal Shoes</li>
+                    <li>Sport Shoes</li>
+                    <li>Jutis And Mojaris</li>
+                    <li>Socks</li>
+    
+                  </div>
+                </ul>
+                </li>
+                
+              </ul>
+              
+            </div>
+            <div id="kids">
+              <ul >
+                <li>
+                  <a href="#">Kids</a>
+                <ul>
+                  <div>
+                  <h3>Boys</h3>
+                  <li>T-Shirts</li>
+                  <li>Bottom Wear</li>
+                  <li>Ethnic Wears</li>
+                  <li>Sweater & Cardigans</li>
+                  <li>Coat & Jackets</li>
+                  <li>Innerwear & Nightware</li>
+                  <li>Twin Sets & Dungress</li>
+     
+                  </div>
+                  <div>
+                    <h3>Girls</h3>
+                    <li>Dress&Frocks</li>
+                    <li>Tees&Tops</li>
+                    <li>Bottom Wear</li>
+                    <li>Sweater & Cardigans</li>
+                    <li>Coat & Jackets</li>
+                    <li>Twin Sets & Jumps Suits</li>
+                    <li>Innerwear & Nightwear</li>
+    
+                  </div>
+                  <div>
+                    <h3>Footwear</h3>
+                    <li>Sandals & Floaters</li>
+                    <li>Slippers & Flip Flops</li>
+                    <li>Casuval Shoes</li>
+                    <li>Sport Shoes</li>
+                    <h3>Formal Shoes</h3>
+                    <li>Giny & Jony</li>
+                    <li>US Polo</li>
+    
+                  </div>
+                </ul>
+                </li>
+                
+              </ul>
+              
+            </div>
+            <div id="home">
+              <ul >
+                <li>
+                  <a href="#">Home</a>
+                <ul>
+                  <div>
+                  <h3>Bed Linen & Furnishing</h3>
+                  <li>Bed sheet Sets</li>
+                  <li>Quilts & Comfortes</li>
+                  <li>Blankets</li>
+                  <li>Bed Covers</li>
+                  <li>Pillow Covers</li>
+                  <li>Curtains</li>
+                  </div>
+                  <div>
+                    <h3>Bath</h3>
+                    <li>Towels</li>
+                    <li>Bath Mats</li>
+                    <li>Shower Curtains</li>
+                    <h3>Furniture</h3>
+                    
+                  </div>
+                  <div>
+                    <h3>Brands</h3>
+                    <li>Bella Cardigans</li>
+                    <li>Cortina</li>
+                    <li>Biaance</li>
+                    <li>Jeby</li>
+                    <li>Saral Home</li>
+                   
+                  </div>
+                </ul>
+                </li>
+                
+              </ul>
+              
+            </div>
+              <a href="#" id="offer">Offers</a>
+           <div class="details">
+            <div>
+              <div class="logo">
+              <img src="https://img.icons8.com/material-sharp/1x/search-more.png" alt="logo">
+            </div>
+            <a href="#">Search</a>
+          </div>
+          <div>
+            <div class="logo">
+            <img src="https://img.icons8.com/ios-glyphs/1x/shopping-cart.png" alt="logo">
+          </div>
+          <a id="acart" href="#">Cart</a>
+        </div>
+        <div>
+          <div class="logo">
+          <img src="https://img.icons8.com/ios-filled/1x/user-male-circle.png" alt="logo">
+        </div>
+        <a id="loginlink" href="../login/login.html">Login</a>
+      </div>
+      </div>
+          </nav>
+        <div id="main">
+            <div class="filter">
+                <div class="total-items">
+                    <p>Mens Fashion - T Shirts, Suits, Blazers & Jeans</p>
+                    <p id="numofpro">83 Products</p>
+                </div>
+                <p>FILTER & SORT</p>
+                <div id="allfilter">
+                    <div class="sortby">
+                        <span>Sort By</span>
+                        <button onclick="toggleDropdown(this)" class="dropbtn">+</button>
+                        <div id="dropdown1" class="dropdown-content">
+                            <input type="checkbox" name="high" id="asc">
+                            <label for="sort">High Price</label><br>
+                            <input type="checkbox" name="low" id="desc">
+                            <label for="sort">Low Price</label><br>
+                            <input type="checkbox" name="trending" id="sort1">
+                            <label for="sort">Trending</label><br>
+                            <input type="checkbox" name="new" id="sort2">
+                            <label for="sort">New</label><br>
+                            <input type="checkbox" name="discount" id="sort3">
+                            <label for="sort">Discount</label><br>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <span>Price</span>
+                        <button onclick="toggleDropdown(this)" class="dropbtn">+</button>
+                        <div id="dropdown2" class="dropdown-content">
+                            <input type="checkbox" name="trending" id="price1">
+                            <label for="sort">300 To 499</label><br>
+                            <input type="checkbox" name="new" id="price2">
+                            <label for="sort">699 To 999</label><br>
+                            <input type="checkbox" name="discount" id="price3">
+                            <label for="sort">1000 To 1499</label><br>
+                            <input type="checkbox" name="high" id="price4">
+                            <label for="sort">1500 To 2499</label><br>
+                            <input type="checkbox" name="low" id="price5">
+                            <label for="sort">2500 To 14999</label><br>
+                        </div>
+                    </div>
+                    <div class="colors">
+                        <span>Colors</span>
+                        <button onclick="toggleDropdown(this)" class="dropbtn">+</button>
+                        <div id="dropdown2" class="dropdown-content">
+                            <input type="checkbox" name="trending" id="blue">
+                            <label for="sort">Blue</label><br>
+                            <input type="checkbox" name="discount" id="black">
+                            <label for="sort"> black</label><br>
+                            <input type="checkbox" name="high" id="gray">
+                            <label for="sort">Gray</label><br>
+                            <input type="checkbox" name="low" id="white">
+                            <label for="sort">white</label><br>
+                            <input type="checkbox" name="trending" id="red">
+                            <label for="sort">Red</label><br>
+                            <input type="checkbox" name="new" id="color7">
+                            <label for="sort">green</label><br>
+                            <input type="checkbox" name="discount" id="color8">
+                            <label for="sort">Dark blue</label><br>
+                            <input type="checkbox" name="high" id="yellow">
+                            <label for="sort">yellow</label><br>
+                            <input type="checkbox" name="low" id="color10">
+                            <label for="sort">beige</label><br>
+                            <input type="checkbox" name="trending" id="color11">
+                            <label for="sort">brown</label><br>
+                            <input type="checkbox" name="new" id="color12">
+                            <label for="sort">pink</label><br>
+                            <input type="checkbox" name="discount" id="color13">
+                            <label for="sort">Maroon</label><br>
+                            <input type="checkbox" name="high" id="color14">
+                            <label for="sort">orange</label><br>
+                            <input type="checkbox" name="low" id="color15">
+                            <label for="sort">Olive</label><br>
+                            <input type="checkbox" name="low" id="color16">
+                            <label for="sort">gold</label><br>
+                            <input type="checkbox" name="low" id="color17">
+                            <label for="sort">purple</label><br>
+                        </div>
+                    </div>
+                    
+                    <div class="brand">
+                        <span>Brand</span>
+                        <button onclick="toggleDropdown(this)" class="dropbtn">+</button>
+                        <div id="dropdown2" class="dropdown-content">
+                            <input type="checkbox" name="trending" id="Manyavar">
+                            <label for="sort">Manyavar</label><br>
+                            <input type="checkbox" name="new" id="Showoff">
+                            <label for="sort">Showoff</label><br>
+                            <input type="checkbox" name="discount" id="HRX">
+                            <label for="sort">HRX</label><br>
+                            <input type="checkbox" name="high" id="Mufti">
+                            <label for="sort">Mufti</label><br>
+                            <input type="checkbox" name="low" id="Soch">
+                            <label for="sort">Soch</label><br>
+                            <input type="checkbox" name="trending" id="Shoeland">
+                            <label for="sort">Shoeland</label><br>
+                            <input type="checkbox" name="new" id="brand7">
+                            <label for="sort">Urban dog</label><br>
+                            <!-- down part not for use -->
+                            <input type="checkbox" name="discount" id="brand8">
+                            <label for="sort">AD Arvind</label><br>
+                            <input type="checkbox" name="high" id="brand9">
+                            <label for="sort">AD Fashion</label><br>
+                            <input type="checkbox" name="low" id="brand10">
+                            <label for="sort">Adorate</label><br>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <span>Category</span>
+                        <button onclick="toggleDropdown(this)" class="dropbtn">+</button>
+                        <div id="dropdown2" class="dropdown-content">
+                            <input type="checkbox" name="trending" id="Bag">
+                            <label for="">Bag</label><br>
+                            <input type="checkbox" name="trending" id="Belt">
+                            <label for="sort">Belt</label><br>
+                            <input type="checkbox" name="new" id="Caps">
+                            <label for="sort">Caps</label><br>
+                            <input type="checkbox" name="new" id="Shoes">
+                            <label for="">Shoes</label><br>
+                            <input type="checkbox" name="discount" id="cat5">
+                            <label for="sort">Men</label><br>
+                            <!-- down part not working -->
+                            <input type="checkbox" name="new" id="cat5">
+                            <label for="">Sports Wear</label><br>
+                            <input type="checkbox" name="high" id="cat6">
+                            <label for="sort">track suits</label><br>
+                        </div>
+                    </div>
+                    <div class="type">
+                        <span>Type</span>
+                        <button onclick="toggleDropdown(this)" class="dropbtn">+</button>
+                        <div id="dropdown2" class="dropdown-content">
+                            <input type="checkbox" name="trending" id="longkurtas">
+                            <label for="sort">longkurtas</label><br>
+                            <input type="checkbox" name="new" id="slimfitSweatshirts">
+                            <label for="sort">slim fit Sweatshirts</label><br>
+                            <input type="checkbox" name="discount" id="RegularfitSweatshirts">
+                            <label for="sort">Regular fit Sweatshirts</label><br>
+                            <input type="checkbox" name="high" id="slimfitjacket">
+                            <label for="sort">slim fit jacket</label><br>
+                            <input type="checkbox" name="low" id="regularfitjacket">
+                            <label for="sort">regular fit jacket</label><br>
+                            <input type="checkbox" name="low" id="regularfithoodie">
+                            <label for="sort">regular fit hoodie</label><br>
+                            <input type="checkbox" name="low" id="regularfit">
+                            <label for="sort">regular fit</label><br>
+                            <input type="checkbox" name="low" id="longlength">
+                            <label for="sort">long length</label><br>
+                            <input type="checkbox" name="low" id="shortlength">
+                            <label for="sort">short length</label><br>
+                            <input type="checkbox" name="low" id="Slimfit">
+                            <label for="sort">Slim fit</label><br>
+                            <input type="checkbox" name="low" id="regular">
+                            <label for="sort">regular</label><br>
+                            <input type="checkbox" name="low" id="type14">
+                            <label for="sort">comfort fit</label><br>
+                            <input type="checkbox" name="low" id="type15">
+                            <label for="sort">shorts</label><br>
+                        </div>
+                    </div>
+                    <div class="occasion">
+                        <span>Occasion</span>
+                        <button onclick="toggleDropdown(this)" class="dropbtn">+</button>
+                        <div id="dropdown2" class="dropdown-content">
+                            <input type="checkbox" name="trending" id="casualwear">
+                            <label for="sort">casual wear</label><br>
+                            <input type="checkbox" name="new" id="workwear">
+                            <label for="sort">work wear</label><br>
+                            <input type="checkbox" name="discount" id="ethnicwear">
+                            <label for="sort">ethnic wear</label><br>
+                            <input type="checkbox" name="high" id="festivewear">
+                            <label for="sort">festival wear</label><br>
+                            <input type="checkbox" name="low" id="sportswear">
+                            <label for="sort">sports wear</label><br>
+                            <input type="checkbox" name="low" id="partywear">
+                            <label for="sort">party wear</label><br>
+                            <input type="checkbox" name="low" id="occa7">
+                            <label for="sort">wedding wear</label><br>
+                            <input type="checkbox" name="low" id="occa9">
+                            <label for="sort">Loungewear</label><br>
+                            <input type="checkbox" name="low" id="occa10">
+                            <label for="sort">Business</label><br>
+                            <input type="checkbox" name="low" id="occa11">
+                            <label for="sort">Basics</label><br>
+                            <input type="checkbox" name="low" id="occa12">
+                            <label for="sort">Ceremonial</label><br>
+                        </div>
+                    </div>
+                    <div class="prints">
+                        <span>Prints</span>
+                        <button onclick="toggleDropdown(this)" class="dropbtn">+</button>
+                        <div id="dropdown2" class="dropdown-content">
+                            <input type="checkbox" name="trending" id="print1">
+                            <label for="sort">solids</label><br>
+                            <input type="checkbox" name="new" id="print2">
+                            <label for="sort">printed</label><br>
+                            <input type="checkbox" name="discount" id="print3">
+                            <label for="sort">checks</label><br>
+                            <input type="checkbox" name="high" id="print4">
+                            <label for="sort">stripes</label><br>
+                            <input type="checkbox" name="low" id="print5">
+                            <label for="sort">Self Design</label><br>
+                            <input type="checkbox" name="low" id="print6">
+                            <label for="sort">color block</label><br>
+                            <input type="checkbox" name="low" id="print7">
+                            <label for="sort">typographic</label><br>
+                            <input type="checkbox" name="low" id="print8">
+                            <label for="sort">graphic</label><br>
+                            <input type="checkbox" name="low" id="print9">
+                            <label for="sort">florals</label><br>
+                            <input type="checkbox" name="low" id="print10">
+                            <label for="sort">Business</label><br>
+                            <input type="checkbox" name="low" id="print11">
+                            <label for="sort">Melange</label><br>
+                            <input type="checkbox" name="low" id="print12">
+                            <label for="sort">abstract</label><br>
+                        </div>
+                    </div>
+                    <div class="size">
+                        <span>Size</span>
+                        <button onclick="toggleDropdown(this)" class="dropbtn">+</button>
+                        <div id="dropdown2" class="dropdown-content">
+                            <input type="checkbox" name="trending" id="size1">
+                            <label for="sort">S</label><br>
+                            <input type="checkbox" name="new" id="size2">
+                            <label for="sort">M</label><br>
+                            <input type="checkbox" name="discount" id="size3">
+                            <label for="sort">L</label><br>
+                            <input type="checkbox" name="high" id="size4">
+                            <label for="sort">Xl</label><br>
+                            <input type="checkbox" name="low" id="size5">
+                            <label for="sort">2xl</label><br>
+                            <input type="checkbox" name="trending" id="size6">
+                            <label for="sort">38</label><br>
+                            <input type="checkbox" name="new" id="size7">
+                            <label for="sort">40</label><br>
+                            <input type="checkbox" name="discount" id="size8">
+                            <label for="sort">42</label><br>
+                            <input type="checkbox" name="high" id="size9">
+                            <label for="sort">44</label><br>
+                            <input type="checkbox" name="low" id="size10">
+                            <label for="sort">36</label><br>
+                            <input type="checkbox" name="trending" id="size11">
+                            <label for="sort">30</label><br>
+                            <input type="checkbox" name="new" id="size12">
+                            <label for="sort">32</label><br>
+                            <input type="checkbox" name="discount" id="size13">
+                            <label for="sort">46</label><br>
+                            <input type="checkbox" name="high" id="size14">
+                            <label for="sort">34</label><br>
+                            <input type="checkbox" name="low" id="size15">
+                            <label for="sort">Xxl</label><br>
+                            <input type="checkbox" name="low" id="size16">
+                            <label for="sort">3xl</label><br>
+                            <input type="checkbox" name="low" id="size17">
+                            <label for="sort">39</label><br>
+                        </div>
+                    </div>
+                    <div class="discount">
+                        <span>Discount</span>
+                        <button onclick="toggleDropdown(this)" class="dropbtn">+</button>
+                        <div id="dropdown2" class="dropdown-content">
+                            <input type="checkbox" name="trending" id="dis1">
+                            <label for="sort">1% To 20%</label><br>
+                            <input type="checkbox" name="new" id="dis2">
+                            <label for="sort">21% To 40%</label><br>
+                            <input type="checkbox" name="discount" id="dis13">
+                            <label for="sort">41% To 60%</label><br>
+                            <input type="checkbox" name="high" id="dis4">
+                            <label for="sort">61% To 80%</label><br>
+                            <input type="checkbox" name="low" id="dis5">
+                            <label for="sort">81% To 100%</label><br>
+                        </div>
+                    </div>
+                    <div class="offers">
+                        <span>Offers</span>
+                        <button onclick="toggleDropdown(this)" class="dropbtn">+</button>
+                        <div id="dropdown2" class="dropdown-content">
+                            <input type="checkbox" name="trending" id="trend">
+                            <label for="sort">Buy 2 Get 1 Free</label><br>
+                        </div>
                     </div>
                 </div>
-                <div class="category">
-                    <span>Category</span>
-                    <button onclick="toggleDropdown(this)" class="dropbtn">+</button>
-                    <div id="dropdown2" class="dropdown-content">
-                        <input type="checkbox" name="trending" id="Bag">
-                        <label for="">Bag</label><br>
-                        <input type="checkbox" name="trending" id="Belt">
-                        <label for="sort">Belt</label><br>
-                        <input type="checkbox" name="new" id="Caps">
-                        <label for="sort">Caps</label><br>
-                        <input type="checkbox" name="new" id="Shoes">
-                        <label for="">Shoes</label><br>
-                        <input type="checkbox" name="discount" id="cat5">
-                        <label for="sort">Men</label><br>
-                        <!-- down part not working -->
-                        <input type="checkbox" name="new" id="cat5">
-                        <label for="">Sports Wear</label><br>
-                        <input type="checkbox" name="high" id="cat6">
-                        <label for="sort">track suits</label><br>
-                    </div>
-                </div>
-                <div class="type">
-                    <span>Type</span>
-                    <button onclick="toggleDropdown(this)" class="dropbtn">+</button>
-                    <div id="dropdown2" class="dropdown-content">
-                        <input type="checkbox" name="trending" id="longkurtas">
-                        <label for="sort">longkurtas</label><br>
-                        <input type="checkbox" name="new" id="slimfitSweatshirts">
-                        <label for="sort">slim fit Sweatshirts</label><br>
-                        <input type="checkbox" name="discount" id="RegularfitSweatshirts">
-                        <label for="sort">Regular fit Sweatshirts</label><br>
-                        <input type="checkbox" name="high" id="slimfitjacket">
-                        <label for="sort">slim fit jacket</label><br>
-                        <input type="checkbox" name="low" id="regularfitjacket">
-                        <label for="sort">regular fit jacket</label><br>
-                        <input type="checkbox" name="low" id="regularfithoodie">
-                        <label for="sort">regular fit hoodie</label><br>
-                        <input type="checkbox" name="low" id="regularfit">
-                        <label for="sort">regular fit</label><br>
-                        <input type="checkbox" name="low" id="longlength">
-                        <label for="sort">long length</label><br>
-                        <input type="checkbox" name="low" id="shortlength">
-                        <label for="sort">short length</label><br>
-                        <input type="checkbox" name="low" id="Slimfit">
-                        <label for="sort">Slim fit</label><br>
-                        <input type="checkbox" name="low" id="regular">
-                        <label for="sort">regular</label><br>
-                        <input type="checkbox" name="low" id="type14">
-                        <label for="sort">comfort fit</label><br>
-                        <input type="checkbox" name="low" id="type15">
-                        <label for="sort">shorts</label><br>
-                    </div>
-                </div>
-                <div class="occasion">
-                    <span>Occasion</span>
-                    <button onclick="toggleDropdown(this)" class="dropbtn">+</button>
-                    <div id="dropdown2" class="dropdown-content">
-                        <input type="checkbox" name="trending" id="casualwear">
-                        <label for="sort">casual wear</label><br>
-                        <input type="checkbox" name="new" id="workwear">
-                        <label for="sort">work wear</label><br>
-                        <input type="checkbox" name="discount" id="ethnicwear">
-                        <label for="sort">ethnic wear</label><br>
-                        <input type="checkbox" name="high" id="festivewear">
-                        <label for="sort">festival wear</label><br>
-                        <input type="checkbox" name="low" id="sportswear">
-                        <label for="sort">sports wear</label><br>
-                        <input type="checkbox" name="low" id="partywear">
-                        <label for="sort">party wear</label><br>
-                        <input type="checkbox" name="low" id="occa7">
-                        <label for="sort">wedding wear</label><br>
-                        <input type="checkbox" name="low" id="occa9">
-                        <label for="sort">Loungewear</label><br>
-                        <input type="checkbox" name="low" id="occa10">
-                        <label for="sort">Business</label><br>
-                        <input type="checkbox" name="low" id="occa11">
-                        <label for="sort">Basics</label><br>
-                        <input type="checkbox" name="low" id="occa12">
-                        <label for="sort">Ceremonial</label><br>
-                    </div>
-                </div>
-                <div class="prints">
-                    <span>Prints</span>
-                    <button onclick="toggleDropdown(this)" class="dropbtn">+</button>
-                    <div id="dropdown2" class="dropdown-content">
-                        <input type="checkbox" name="trending" id="print1">
-                        <label for="sort">solids</label><br>
-                        <input type="checkbox" name="new" id="print2">
-                        <label for="sort">printed</label><br>
-                        <input type="checkbox" name="discount" id="print3">
-                        <label for="sort">checks</label><br>
-                        <input type="checkbox" name="high" id="print4">
-                        <label for="sort">stripes</label><br>
-                        <input type="checkbox" name="low" id="print5">
-                        <label for="sort">Self Design</label><br>
-                        <input type="checkbox" name="low" id="print6">
-                        <label for="sort">color block</label><br>
-                        <input type="checkbox" name="low" id="print7">
-                        <label for="sort">typographic</label><br>
-                        <input type="checkbox" name="low" id="print8">
-                        <label for="sort">graphic</label><br>
-                        <input type="checkbox" name="low" id="print9">
-                        <label for="sort">florals</label><br>
-                        <input type="checkbox" name="low" id="print10">
-                        <label for="sort">Business</label><br>
-                        <input type="checkbox" name="low" id="print11">
-                        <label for="sort">Melange</label><br>
-                        <input type="checkbox" name="low" id="print12">
-                        <label for="sort">abstract</label><br>
-                    </div>
-                </div>
-                <div class="size">
-                    <span>Size</span>
-                    <button onclick="toggleDropdown(this)" class="dropbtn">+</button>
-                    <div id="dropdown2" class="dropdown-content">
-                        <input type="checkbox" name="trending" id="size1">
-                        <label for="sort">S</label><br>
-                        <input type="checkbox" name="new" id="size2">
-                        <label for="sort">M</label><br>
-                        <input type="checkbox" name="discount" id="size3">
-                        <label for="sort">L</label><br>
-                        <input type="checkbox" name="high" id="size4">
-                        <label for="sort">Xl</label><br>
-                        <input type="checkbox" name="low" id="size5">
-                        <label for="sort">2xl</label><br>
-                        <input type="checkbox" name="trending" id="size6">
-                        <label for="sort">38</label><br>
-                        <input type="checkbox" name="new" id="size7">
-                        <label for="sort">40</label><br>
-                        <input type="checkbox" name="discount" id="size8">
-                        <label for="sort">42</label><br>
-                        <input type="checkbox" name="high" id="size9">
-                        <label for="sort">44</label><br>
-                        <input type="checkbox" name="low" id="size10">
-                        <label for="sort">36</label><br>
-                        <input type="checkbox" name="trending" id="size11">
-                        <label for="sort">30</label><br>
-                        <input type="checkbox" name="new" id="size12">
-                        <label for="sort">32</label><br>
-                        <input type="checkbox" name="discount" id="size13">
-                        <label for="sort">46</label><br>
-                        <input type="checkbox" name="high" id="size14">
-                        <label for="sort">34</label><br>
-                        <input type="checkbox" name="low" id="size15">
-                        <label for="sort">Xxl</label><br>
-                        <input type="checkbox" name="low" id="size16">
-                        <label for="sort">3xl</label><br>
-                        <input type="checkbox" name="low" id="size17">
-                        <label for="sort">39</label><br>
-                    </div>
-                </div>
-                <div class="discount">
-                    <span>Discount</span>
-                    <button onclick="toggleDropdown(this)" class="dropbtn">+</button>
-                    <div id="dropdown2" class="dropdown-content">
-                        <input type="checkbox" name="trending" id="dis1">
-                        <label for="sort">1% To 20%</label><br>
-                        <input type="checkbox" name="new" id="dis2">
-                        <label for="sort">21% To 40%</label><br>
-                        <input type="checkbox" name="discount" id="dis13">
-                        <label for="sort">41% To 60%</label><br>
-                        <input type="checkbox" name="high" id="dis4">
-                        <label for="sort">61% To 80%</label><br>
-                        <input type="checkbox" name="low" id="dis5">
-                        <label for="sort">81% To 100%</label><br>
-                    </div>
-                </div>
-                <div class="offers">
-                    <span>Offers</span>
-                    <button onclick="toggleDropdown(this)" class="dropbtn">+</button>
-                    <div id="dropdown2" class="dropdown-content">
-                        <input type="checkbox" name="trending" id="trend">
-                        <label for="sort">Buy 2 Get 1 Free</label><br>
-                    </div>
+            </div>
+            <div id="container">
+                <div id="card">
+                    
                 </div>
             </div>
         </div>
-        <div id="container">
-            <div id="card">
-                
-            </div>
-        </div>
-    </div>
-</body>
-<script src="/categoryPage/category.js"></script>
+    </body>
+<script src="./category.js"></script>
 
 </html>

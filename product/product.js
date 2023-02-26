@@ -22,7 +22,6 @@ let contains = document.getElementById("contains");
 let type = document.getElementById("type");
 let work = document.getElementById("work");
 
-
 prodimg.src = LsData.img;
 nameing.innerHTML = `Title : ${LsData.title}`;
 brand.innerHTML = `Brand : ${LsData.brand}`;
@@ -45,7 +44,6 @@ contains.innerHTML = `product contains : ${LsData.contains}`;
 type.innerHTML = `type : ${LsData.type}`;
 work.innerHTML = `work : ${LsData.work}`;
 
-
 let buttons = document.querySelectorAll(".btn");
 
 let count = 0;
@@ -61,27 +59,22 @@ let cartData = JSON.parse(localStorage.getItem("addingToCart")) || [];
 addToCart.addEventListener("click", function () {
   if (count == 0) {
     alert("Please select the size");
-  } else if (CheckDuplicate(LsData)) {
-    alert("Product Already in cart");
   } else {
     cartData.push(LsData);
     localStorage.setItem("addingToCart", JSON.stringify(cartData));
     alert("Product Added to cart");
-    window.location.assign("fierce-head-727/cart.html");
+    window.location.href = "../cart.html";
   }
- window.location.assign("cart.html")
 });
 
-
-
-function CheckDuplicate(product) {
-  for (let i = 0; i < cartData.length; i++) {
-    if (cartData[i].id === product.id) {
-      return true;
-    }
-  }
-  return false;
-}
+// function CheckDuplicate(product) {
+//   for (let i = 0; i < cartData.length; i++) {
+//     if (cartData[i].id === product.id) {
+//       return true;
+//     }
+//   }
+//   return false;
+// }
 
 let logo = document.getElementById("logo");
 let men = document.getElementById("men");
@@ -89,7 +82,7 @@ let cart = document.getElementById("acart");
 let login = document.getElementById("loginlink");
 
 logo.addEventListener("click", () => {
-  window.location.assign("index.html");
+  window.location.assign("../index.html");
 });
 
 men.addEventListener("click", () => {

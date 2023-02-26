@@ -124,10 +124,10 @@ a {
 }
 .details{
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(4,1fr);
   gap: 30px;
-  text-align: center;
-  margin-left: 40%;
+  /* text-align: center; */
+  margin-left: 35%;
   margin-top: 15px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
 }
@@ -137,6 +137,11 @@ a {
   padding-left: 30px;
 }
 
+#adminpage{
+    color: red;
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+}
 
 
 
