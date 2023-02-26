@@ -27,6 +27,22 @@ body{
     margin-left: 40px;
 }
 
+#topContainer div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: -10px;
+}
+
+#topContainer div:nth-child(2) a{
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+
 #Vline{
     border-left: 2px solid gray;
     height: 50px;
