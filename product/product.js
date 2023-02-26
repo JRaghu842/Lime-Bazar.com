@@ -45,6 +45,7 @@ contains.innerHTML = `product contains : ${LsData.contains}`;
 type.innerHTML = `type : ${LsData.type}`;
 work.innerHTML = `work : ${LsData.work}`;
 
+
 let buttons = document.querySelectorAll(".btn");
 
 let count = 0;
@@ -68,6 +69,7 @@ addToCart.addEventListener("click", function () {
     alert("Product Added to cart");
     window.location.assign("/cart.html");
   }
+ window.location.assign("cart.html")
 });
 
 

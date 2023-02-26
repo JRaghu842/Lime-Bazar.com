@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<link rel="stylesheet" href="adress.css">
+
+<body>
+  <div class="topsection">
+    <div class="logo">
+      <img src="logo_page-0001.jpg" alt="logo">
+    </div>
+  </div>
+  <div id="bottomsection">
+    <div class="address">
+      <h2>Please Fill Address For Shipping</h2>
+      <form action="address">
+        <input type="text" placeholder="Full Name" required><br>
+        <input type="text" placeholder="Flat/house/Building Name/House No" required><br>
+        <input type="text" placeholder="Colony/Location" required><br>
+        <input type="text" placeholder="City">
+        <input type="text" placeholder="State"><br>
+        <input type="text" placeholder="Pincode" required><br>
+        <input type="Number" placeholder="Mobile Number" required><br>
+        <input type="submit" value="Place order" id="button">
+      </form>
+    </div> 
+    <div class="payment">
+
+      <div class="details">
+        <h3>Order Details</h3>
+        <div class="price">
+          <p>Total Price</p>
+          <p id="total">0</p>
+        </div>
+        <div class="charge">
+          <p>Shipping Charges</p>
+          <p>Free</p>
+        </div>
+        <div class="amount">
+          <p>Amount Payable</p>
+          <p id="amount">0</p>
+        </div>
+      </div>
+      
+      <img id="img" src="https://t3.ftcdn.net/jpg/04/16/93/06/240_F_416930664_t3I6hOsscS0UyZonSX8eVnIFyApeeTCO.jpg" alt="image">
+    </div>
+  </div>
+
+</body>
+<script src="adress.js"></script>
+
+</html>
