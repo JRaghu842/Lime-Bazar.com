@@ -9,3 +9,9 @@ let payButton = document.getElementById("button");
 payButton.addEventListener("click", () => {
   window.location.href = "/payment.html";
 });
+
+let logoimg = document.getElementById("logoimg");
+
+logoimg.addEventListener("click", () => {
+  window.location.assign("./index.html");
+});

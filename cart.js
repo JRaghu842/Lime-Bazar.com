@@ -57,3 +57,9 @@ buy.addEventListener("click", () => {
   localStorage.setItem("amount", JSON.stringify(amount.innerText));
   window.location.assign("adress.html");
 });
+
+let logoimg = document.getElementById("logoimg");
+
+logoimg.addEventListener("click", () => {
+  window.location.assign("./index.html");
+});
