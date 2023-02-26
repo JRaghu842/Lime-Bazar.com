@@ -125,7 +125,6 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* border: 1px solid black; */
 }
 
 .containers div{
@@ -283,7 +282,146 @@ body{
 
 
 }
-
-
 }
 
+
+
+@media screen and (max-width:499px){
+    #topContainer{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .slider figure img{
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        float: left;
+    }
+
+    h3{
+        text-align: center;
+    }
+    #container1{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+    #container1>div{
+        width: 80%;
+        background-color: rgb(255, 255, 255);
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+
+    }
+
+
+    #container2{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+    #container2>div{
+        width: 80%;
+        background-color: rgb(255, 255, 255);
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+
+    }
+
+    #container3{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+    #container3>div{
+        width: 80%;
+        background-color: rgb(255, 255, 255);
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+
+    }
+
+    #container4{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+    #container4>div{
+        width: 80%;
+        background-color: rgb(255, 255, 255);
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+
+    }
+
+    #container5{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+    #container5>div{
+        width: 80%;
+        background-color: rgb(255, 255, 255);
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+
+    }
+
+    #container6{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+    #container6>div{
+        width: 80%;
+        background-color: rgb(255, 255, 255);
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+
+    }
+
+    #container7{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+    #container7>div{
+        width: 80%;
+        background-color: rgb(255, 255, 255);
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+
+    }
+
+    #container8{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+    #container8>div{
+        width: 80%;
+        background-color: rgb(255, 255, 255);
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+
+    }
+
+}
