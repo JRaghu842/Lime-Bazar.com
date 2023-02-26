@@ -10,8 +10,9 @@
     width: 100%;
 }
 #bottomsection{
-display: flex;
-justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
 
 }
 .itemsdetails{
@@ -31,18 +32,18 @@ width: 10px;
 }
 button {
 display: inline-block;
-background-color: #EC407A;
+background-color: #3e8e41;
 border: none;
 color: white;
 text-align: center;
 font-size: 16px;
 padding: 10px 20px;
 cursor: pointer;
-border-radius: 4px;
+border-radius: 5px;
 }
 
-.button:hover {
-background-color: #3e8e41;
+button:hover {
+    background-color: #ccc;
 }
 
 .img{
@@ -58,18 +59,20 @@ display: flex;
 .price,.charge,.tax,.amount{
 display: grid;
 grid-template-columns: repeat(2,1fr);
-gap: 20px
-
+gap: 20px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
 }
 .card{
 display: grid;
 grid-template-columns: repeat(2,1fr);
 gap: 5px;
 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-width: 500px;
+width: 600px;
+margin-bottom: 10px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
 }
 .image{
-width: 150px;
+width: 200px;
 
 }
 .image>img{
@@ -80,3 +83,34 @@ height: 100%;
 font-size: 19px ;
 color: #EC407A;
 }
+#delete{
+    margin-bottom: 10px;
+    background-color: #3e8e41;
+    /* height: 20px; */
+    border-radius: 5px;
+}
+#delete:hover{
+    cursor: pointer;
+    background-color: #ccc;
+}
+@media screen and (max-width: 350px) {
+    #bottomsection{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+    
+    }
+    .card{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+  }
+  @media screen and (max-width: 750px) {
+    #bottomsection{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+    
+    }
+   
+  }

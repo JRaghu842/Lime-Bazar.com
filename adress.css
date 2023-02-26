@@ -1,0 +1,89 @@
+.topsection {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 30px;
+  }
+
+  .logo {
+    width: 90px;
+    height: 90px;
+  }
+
+  .logo>img {
+    width: 100%;
+  }
+
+  .address {
+    max-width: 600px;
+
+    padding: 20px;
+
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+
+  input[type="text"]:focus,
+  input[type="number"]:focus {
+    border-color: #4a90e2;
+    outline: none;
+  }
+
+  #bottomsection {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .payment {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+
+  .price,
+  .charge,
+  .tax,
+  .amount {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px
+  }
+
+  #button {
+    
+    width: 300px;
+    height: 40px;
+    margin: auto;
+    background-color:#3e8e41;
+    border-radius: 5px;
+    border: none;
+  }
+
+  #button:hover {
+    cursor: pointer;
+    background-color: #ccc;
+  }
+  #img{
+    display: block;
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 400px;
+  }
