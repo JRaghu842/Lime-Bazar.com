@@ -67,7 +67,7 @@ addToCart.addEventListener("click", function () {
     cartData.push(LsData);
     localStorage.setItem("addingToCart", JSON.stringify(cartData));
     alert("Product Added to cart");
-    window.location.assign("cart.html");
+    window.location.assign("fierce-head-727/cart.html");
   }
  window.location.assign("cart.html")
 });
