@@ -63,7 +63,7 @@ addToCart.addEventListener("click", function () {
     alert("Product Already in cart");
   } else {
     cartData.push(LsData);
-    localStorage.setItem("cart", JSON.stringify(cartData));
+    localStorage.setItem("addingToCart", JSON.stringify(cartData));
     alert("Product Added to cart");
   }
 });
