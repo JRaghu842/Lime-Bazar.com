@@ -25,7 +25,6 @@ fetch(url)
   .then(response => response.json())
   .then(data => {
     console.log(data)
-    products = data;
     displayproduct(data) // This will output the data to the console
     // You can do whatever you want with the data here
   })
@@ -33,19 +32,35 @@ fetch(url)
     console.log('Error fetching data:', error);
   });
     let cartcontainer=document.getElementById("card")
-    let stdiv=document.getElementsByClassName("stdiv")
-    cartcontainer.addEventListener('click', function(e) {
-      // Check if the clicked element is the cart container itself
-      if (e.target === cartcontainer) {
-        // Save the products array to local storage
-        localStorage.setItem('products', JSON.stringify(products));
-      }
-    });
+
+    let stdivs=document.querySelectorAll(".stdivs") 
     function displayproduct(data){
       cartcontainer.innerHTML="";
       data.forEach((ele,ind )=> {
         let  div=document.createElement("div")
-        div.className=("stdiv")
+        div.className=("stdivs")
+        div.addEventListener("click",()=>{
+          let obj={
+            img:ele.image,
+            title:ele.title,
+            brand:ele.brand,
+            price:ele.price,
+            occasion:ele.description.occasion,
+            brandname:ele.brand,
+            color:ele.description.color,
+            lengths:ele.description.length,
+            lengthcms:ele.description["length(cms)"],
+            material:ele.description.material,
+            prints:ele.description["print & pattern"],
+            code:ele.description["product code"],
+            contains:ele.description["product contains"],
+            type:ele.description.type,
+            work:ele.description.work,
+            country:ele.description["country of origin"],
+            rating:ele.rating
+          }
+          localStorage.setItem('products', JSON.stringify(obj))
+        })
         let image=document.createElement("img")
         let hr=document.createElement("hr")  
         let he1=document.createElement("h3") 

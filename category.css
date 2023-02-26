@@ -126,9 +126,12 @@ span{
 #card>div{
     margin-left: 8px;
     background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 5px;
     /* border: 1px solid black; */
+}
+#card>div:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 #card>div>img{
     /* display: block; */
