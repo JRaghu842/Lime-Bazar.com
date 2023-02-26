@@ -70,11 +70,7 @@ a {
   grid-template-columns: repeat(3,1fr);
   gap: 30px;
   text-align: center;
-<<<<<<< HEAD
   margin-left: 40%;
-=======
-  margin-left: 50%;
->>>>>>> 826bee7d24b1bf5affdb8e512bc5bc186d94c459
   margin-top: 15px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
 }
