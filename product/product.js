@@ -22,6 +22,7 @@ let contains = document.getElementById("contains");
 let type = document.getElementById("type");
 let work = document.getElementById("work");
 
+
 prodimg.src = LsData.img;
 nameing.innerHTML = LsData.title;
 brand.innerHTML = LsData.brand;
@@ -67,6 +68,8 @@ addToCart.addEventListener("click", function () {
     alert("Product Added to cart");
   }
 });
+
+
 
 function CheckDuplicate(product) {
   for (let i = 0; i < cartData.length; i++) {
