@@ -66,8 +66,8 @@ addToCart.addEventListener("click", function () {
     cartData.push(LsData);
     localStorage.setItem("addingToCart", JSON.stringify(cartData));
     alert("Product Added to cart");
+    window.location.assign("/cart.html");
   }
-  window.location.assign("/cart.html");
 });
 
 
@@ -80,3 +80,19 @@ function CheckDuplicate(product) {
   }
   return false;
 }
+
+logo.addEventListener("click", () => {
+  window.location.assign("index.html");
+});
+
+men.addEventListener("click", () => {
+  window.location.assign("categoryPage/category.html");
+});
+
+cart.addEventListener("click", () => {
+  window.location.assign("cart/cart.html");
+});
+
+login.addEventListener("loginlink", () => {
+  window.location.assign("login/login.html");
+});
