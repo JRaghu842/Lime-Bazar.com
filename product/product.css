@@ -36,7 +36,7 @@ ul ul {
   list-style: none;
     
 }
-h3:hover{
+nav h3:hover{
 color: #C2185B;
 }
 
@@ -167,7 +167,7 @@ a {
     background-color: rgb(191, 191, 191);
 }
 
-#sizeAvil button:hover{
+#sizeAvil>button:hover{
     color: rgb(224, 79, 103);
     cursor: pointer;
 

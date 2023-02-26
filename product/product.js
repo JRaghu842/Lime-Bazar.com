@@ -78,6 +78,11 @@ function CheckDuplicate(product) {
   return false;
 }
 
+let logo = document.getElementById("logo");
+let men = document.getElementById("men");
+let cart = document.getElementById("acart");
+let login = document.getElementById("loginlink");
+
 logo.addEventListener("click", () => {
   window.location.assign("index.html");
 });

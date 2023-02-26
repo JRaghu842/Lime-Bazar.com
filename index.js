@@ -597,9 +597,21 @@ heart24.addEventListener("click", function () {
 
 let logo = document.getElementById("logo");
 let men = document.getElementById("men");
+let cart = document.getElementById("acart");
+let login = document.getElementById("loginlink");
+
 logo.addEventListener("click", () => {
   window.location.assign("index.html");
 });
+
 men.addEventListener("click", () => {
   window.location.assign("categoryPage/category.html");
+});
+
+cart.addEventListener("click", () => {
+  window.location.assign("cart/cart.html");
+});
+
+login.addEventListener("loginlink", () => {
+  window.location.assign("login/login.html");
 });
