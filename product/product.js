@@ -22,27 +22,29 @@ let contains = document.getElementById("contains");
 let type = document.getElementById("type");
 let work = document.getElementById("work");
 
+
 prodimg.src = LsData.img;
-nameing.innerHTML = LsData.title;
-brand.innerHTML = LsData.brand;
+nameing.innerHTML = `Title : ${LsData.title}`;
+brand.innerHTML = `Brand : ${LsData.brand}`;
 
-cost.innerHTML = `₹ ${Number(LsData.price)}`;
-discount.innerHTML = `${10}% `;
-total.innerHTML = `₹ ${Math.ceil(Number(LsData.price) / 10)}`;
-saved.innerHTML = Number(LsData.price) - Math.ceil(Number(LsData.price) / 10);
+cost.innerHTML = `:- ₹ ${Number(LsData.price)}`;
+discount.innerHTML = `:- ${10}% `;
+total.innerHTML = Number(LsData.price) - Math.ceil(Number(LsData.price) / 10);
+saved.innerHTML = `:- ₹ ${Math.ceil(Number(LsData.price) / 10)}`;
 
-occasion.innerHTML = LsData.occasion;
-brandname.innerHTML = LsData.brand;
-color.innerHTML = LsData.color;
-country.innerHTML = LsData.country;
-lengths.innerHTML = LsData.lengths;
-lengthcms.innerHTML = LsData.lengthcms;
-material.innerHTML = LsData.material;
-prints.innerHTML = LsData.prints;
-code.innerHTML = LsData.code;
-contains.innerHTML = LsData.contains;
-type.innerHTML = LsData.type;
-work.innerHTML = LsData.work;
+occasion.innerHTML = `occasion : ${LsData.occasion}`;
+brandname.innerHTML = `Brand name : ${LsData.brand}`;
+color.innerHTML = `color : ${LsData.color}`;
+country.innerHTML = `country of origin : ${LsData.country}`;
+lengths.innerHTML = `length : ${LsData.lengths}`;
+lengthcms.innerHTML = `length (cms) : ${LsData.lengthcms}`;
+material.innerHTML = `material : ${LsData.material}`;
+prints.innerHTML = `print & pattern : ${LsData.prints}`;
+code.innerHTML = `product code : ${LsData.code}`;
+contains.innerHTML = `product contains : ${LsData.contains}`;
+type.innerHTML = `type : ${LsData.type}`;
+work.innerHTML = `work : ${LsData.work}`;
+
 
 let buttons = document.querySelectorAll(".btn");
 
@@ -63,11 +65,14 @@ addToCart.addEventListener("click", function () {
     alert("Product Already in cart");
   } else {
     cartData.push(LsData);
-    localStorage.setItem("cart", JSON.stringify(cartData));
+    localStorage.setItem("addingToCart", JSON.stringify(cartData));
     alert("Product Added to cart");
+    window.location.assign("/cart.html");
   }
  window.location.assign("cart.html")
 });
+
+
 
 function CheckDuplicate(product) {
   for (let i = 0; i < cartData.length; i++) {
@@ -77,3 +82,19 @@ function CheckDuplicate(product) {
   }
   return false;
 }
+
+logo.addEventListener("click", () => {
+  window.location.assign("index.html");
+});
+
+men.addEventListener("click", () => {
+  window.location.assign("categoryPage/category.html");
+});
+
+cart.addEventListener("click", () => {
+  window.location.assign("cart/cart.html");
+});
+
+login.addEventListener("loginlink", () => {
+  window.location.assign("login/login.html");
+});

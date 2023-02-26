@@ -594,3 +594,12 @@ heart24.addEventListener("click", function () {
     heart24.className = "fa-regular fa-heart";
   }
 });
+
+let logo = document.getElementById("logo");
+let men = document.getElementById("men");
+logo.addEventListener("click", () => {
+  window.location.assign("index.html");
+});
+men.addEventListener("click", () => {
+  window.location.assign("categoryPage/category.html");
+});
