@@ -65,7 +65,7 @@ addToCart.addEventListener("click", function () {
     cartData.push(LsData);
     localStorage.setItem("addingToCart", JSON.stringify(cartData));
     alert("Product Added to cart");
-    window.location.assign("/cart.html");
+    window.location.assign("cart.html");
   }
 });
 
@@ -92,7 +92,7 @@ men.addEventListener("click", () => {
 });
 
 cart.addEventListener("click", () => {
-  window.location.assign("cart/cart.html");
+  window.location.assign("cart.html");
 });
 
 login.addEventListener("loginlink", () => {
