@@ -8,6 +8,19 @@ function toggleDropdown(span) {
 }
 const url = `https://testapi2-9psr.onrender.com/Products?category=Men`;
 
+
+
+let logo = document.getElementById("logo");
+let men = document.getElementById("men");
+logo.addEventListener("click", () => {
+  window.location.assign("index.html");
+});
+men.addEventListener("click", () => {
+  window.location.assign("category.html");
+});
+
+
+
 // fillter this all
 let price1 = document.getElementById("price1");
 let price2 = document.getElementById("price2");
