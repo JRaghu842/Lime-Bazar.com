@@ -13,7 +13,7 @@
     <div id="wrapper">
         <div id="all_the_form">
             
-                <form id="register-form">
+                 <div id="register-form"> 
                 <label for="name">Add Products</label>
                  <input type="text" placeholder="title" required id="add_products_title">
                  <input type="text" placeholder="price" required id="add_products_price">
@@ -21,7 +21,7 @@
                  <input type="text" placeholder="image" required id="add_products_image">
                  <input type="text" placeholder="description" required id="add_products_description">
                  <input type="text" placeholder="brand" required id="add_products_brand">
-                 <input type="text" placeholder="color" required id="add_products_color">
+                
                  <button type="submit" id="add_products_btn">Add Products</button>
                  
 
@@ -32,7 +32,7 @@
                   <input type="text" placeholder="image" required id="update_products_image">
                   <input type="text" placeholder="description" required id="update_products_description">
                   <input type="text" placeholder="brand" required id="update_products_brand">
-                  <input type="text" placeholder="color" required id="update_products_color">
+                  <input type="text" placeholder="id" required id="update_products_id">
                   <button type="submit" id="update_products_btn">Update Products</button>
 
                  <label for="name">Update Price</label>
@@ -63,27 +63,27 @@
 
             
 
-            </form>
+             </div> 
         </div>
         <div id="container">
             <div id="box">
                 <div id="first box">
                     Total items
-                    <h3>0</h3><i class="fas fa-cart-plus"></i>
+                    <h3 id="count1">0</h3><i class="fas fa-cart-plus"></i>
                 </div>
                 <div id="second box">
                     Newly Add items
-                    <h3>0</h3>
+                    <h3 id="count2" >0</h3>
                     <i class="fas fa-cart-plus"></i>
                 </div>
                 <div id="third box">
                     Total Updated items
-                    <h3>0</h3>
+                    <h3 id="count3">0</h3>
                     <i class="fas fa-cart-plus"></i>
                 </div>
                 <div id="fourth box">
                     Deleted items
-                    <h3>0</h3>
+                    <h3 id="count4">0</h3>
                     <i class="fas fa-cart-plus"></i>
                 </div>
             </div>

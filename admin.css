@@ -2,7 +2,7 @@ body{
     font-family: 'Roboto', sans-serif;
     width: 90%;
     margin: auto;
-    background-color: rgb(240, 245, 247);
+    background-color: rgb(224,223,223);
 }
 form{
     margin:0 auto;
@@ -11,6 +11,7 @@ form{
     border-radius: 10px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border: 2px solid #47e762;
 }
 h1{
     font-size: 40px;
@@ -45,11 +46,11 @@ label {
     display: block;
     margin: 30px auto 0;
     padding: 10px 50px;
-    background-color: rgb(103, 246, 182);
+    background-color: rgb(155,212,68);
     color: white;
     font-size: 20px;
     font-weight: bold;
     border: none;
-    border-radius: 25px;
+    border-radius: 5px;
     cursor: pointer;
 }
