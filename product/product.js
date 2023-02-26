@@ -41,8 +41,8 @@ material.innerHTML = LsData.material;
 prints.innerHTML = LsData.prints;
 code.innerHTML = LsData.code;
 contains.innerHTML = LsData.contains;
-type.innerHTML = LsData.description.type;
-work.innerHTML = LsData.description.work;
+type.innerHTML = LsData.type;
+work.innerHTML = LsData.work;
 
 let buttons = document.querySelectorAll(".btn");
 
