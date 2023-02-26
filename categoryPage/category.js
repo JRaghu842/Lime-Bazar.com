@@ -60,6 +60,7 @@ fetch(url)
             rating:ele.rating
           }
           localStorage.setItem('products', JSON.stringify(obj))
+          window.location.assign("/product/product.html")
         })
         let image=document.createElement("img")
         let hr=document.createElement("hr")  
