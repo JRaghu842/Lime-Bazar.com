@@ -6,7 +6,7 @@ Lime Bazar is an ecommerce website for clothing and fashion accessories, which i
 
 ## Authors
 
-- [JRaghu842](https://www.github.com/JRaghu842)
+- [JRaghu842(lead)](https://www.github.com/JRaghu842)
 - [Shan-Ali4](https://www.github.com/Shan-Ali4)
 - [Siddharth](https://www.github.com/853204)
 - [Deekshith-28](https://www.github.com/Deekshith-28)
@@ -33,5 +33,8 @@ Lime Bazar is an ecommerce website for clothing and fashion accessories, which i
 - admin login
 - adding products in backend by admin
 
+## API Reference
 
+- Products API link
+https://63f5b7b2ab76703b15b0397b.mockapi.io/Products
 
