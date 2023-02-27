@@ -394,7 +394,32 @@ a {
 }
 }
 
+#AbtUs{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
+#AbtUs p:hover{
+    font-weight: 500;
+    cursor: pointer;
+}
+    
+
+#copyright{
+    text-align: center;
+}
+
+#copyright:hover{
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+hr{
+    color: rgb(163, 163, 163);
+}
 
 @media screen and (max-width:499px){
     #topContainer{
