@@ -7,7 +7,7 @@ amount.innerText = data;
 
 let payButton = document.getElementById("button");
 payButton.addEventListener("click", () => {
-  window.location.href = "/payment.html";
+  window.location.assign("payment.html");
 });
 
 let logoimg = document.getElementById("logoimg");
