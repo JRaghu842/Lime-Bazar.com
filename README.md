@@ -34,7 +34,7 @@ Lime Bazar is an ecommerce website for clothing and fashion accessories, which i
 - adding products in backend by admin
 
 ## Deployed netify link
-- https://imaginative-biscuit-70410c.netlify.app/
+- https://wondrous-entremet-28d976.netlify.app/
 
 ## API Reference
 
